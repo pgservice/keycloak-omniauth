@@ -1,0 +1,14 @@
+<h1>Welcome to My App</h1>
+
+<% if @user %>
+  <div>
+    <p>Hello, <strong><%= @user[:name] %></strong>!</p>
+    <p>Email: <%= @user[:email] %></p>
+    <%= button_to "Logout", logout_path, method: :delete, data: { turbo: false } %>
+  </div>
+<% else %>
+  <div>
+    <p>You are not signed in.</p>
+    <%= button_to "Login with Keycloak", "/auth/keycloak", data: { turbo: false } %>
+  </div>
+<% end %>
