@@ -49,9 +49,12 @@ secret_key_base: c06b40... c568bf649c87ea10 (Do not edit)
 ```yml
 Client ID: test-cli
 
-Valid redirect URIs: http://localhost:3000/auth/keycloak_openid/callback
+Client type: OpenID Connect
 
 Root URL: http://localhost:3000
+
+Valid redirect URIs: http://localhost:3000/auth/keycloak/callback
+                     http://localhost:3000/auth/keycloak_openid/callback
 
 Valid post logout redirect URIs: http://localhost:3000/logout_success/*
 
